@@ -1,187 +1,110 @@
-# GlobalAIHub_VeriAnalizi
-
-
 # IMDB Movie Reviews Sentiment Analysis
 
-## 📘 Project Overview:
-This project performs sentiment analysis on the **IMDB Dataset of 50K Movie Reviews** using statistical tests and visualizations to analyze positive and negative sentiments. The analysis includes **Exploratory Data Analysis (EDA)**, **Data Preprocessing**, and **Hypothesis Testing**.
+This project analyzes the **IMDB Dataset of 50K Movie Reviews** using statistical methods and visualizations to explore the differences between positive and negative sentiments. The analysis includes **Exploratory Data Analysis (EDA)**, **Data Preprocessing**, **Hypothesis Testing**, and **Visualization**.
+
+## Project Details:
+- **Dataset:** IMDB Movie Reviews Dataset from Kaggle
+- **Objective:** To perform sentiment analysis on movie reviews and compare positive and negative sentiments based on review length using statistical tests such as ANOVA and Chi-Squared.
+
+### Key Steps in the Project:
+1. **Dataset Loading and Exploration**
+   - Load the IMDB movie reviews dataset from Kaggle.
+   - Preview the first few rows and inspect the structure.
+   
+2. **Exploratory Data Analysis (EDA)**
+   - Analyze the sentiment distribution of the reviews (positive vs negative).
+   - Visualize the data using bar and pie charts.
+   
+3. **Data Cleaning and Preprocessing**
+   - Check for missing data and fill missing reviews with 'No Review'.
+   - Create a new feature `review_length` to represent the length of each review.
+   
+4. **Statistical Analysis**
+   - Perform **ANOVA** test to compare the length of positive and negative reviews.
+   - Perform **Chi-Squared** test to examine the relationship between sentiment and review length.
+   
+5. **Visualization**
+   - Visualize sentiment distribution, review length distribution, and sentiment-based review length comparison using **bar charts**, **pie charts**, **histograms**, and **boxplots**.
 
 ---
 
-## 📊 Dataset Information:
-- **Source:** Kaggle
-- **Rows:** 50,000
-- **Columns:**
-  - **review:** Text of the movie review
-  - **sentiment:** Label indicating whether the review is positive or negative
+## Results and Insights:
+- **Positive Reviews** tend to be longer, indicating more detailed expressions of satisfaction.
+- **Negative Reviews** are typically shorter, suggesting that criticism is more concise.
+- **Business Application:**
+  - This analysis can be used to understand user feedback better and tailor responses to positive and negative sentiments accordingly.
 
-### Preview:
-The first 5 rows of the dataset:
-```plaintext
-| review                                    | sentiment |
-|-------------------------------------------|-----------|
-| One of the other reviewers has mentioned... | positive  |
-| A wonderful little production...           | positive  |
-| I thought this was a wonderful way to...   | positive  |
-| Basically there's a family where...        | negative  |
-| Petter Mattei's 'Love in the Time of Money' | positive  |
-🔍 Steps and Analysis:
+---
 
-1. Dataset Loading and Exploration:
-Loaded the dataset from Kaggle and previewed the first 5 rows.
-Columns and data types were checked.
-2. Exploratory Data Analysis (EDA):
-Sentiment Distribution:
-Positive: 50%
-Negative: 50%
-Visualized sentiment distribution using Bar Chart and Pie Chart.
-3. Data Cleaning and Preprocessing:
-Checked for missing data, and filled any missing reviews with 'No Review'.
-Created a new numeric feature: review_length to represent the length of each review.
-📊 Statistical Analysis:
+## Libraries Used:
+- **Pandas:** Data manipulation and analysis.
+- **NumPy:** Numerical computations.
+- **Matplotlib & Seaborn:** Data visualizations.
+- **SciPy:** Statistical analysis (ANOVA, Chi-Squared).
 
-4.1 ANOVA Test:
-Hypothesis: Do positive and negative reviews differ significantly in length?
-Results:
-F-statistic: 12.0557
-P-value: 0.000516
-Conclusion: There is a statistically significant difference between positive and negative review lengths.
-4.2 Chi-Squared Test:
-Hypothesis: Is there a relationship between sentiment and review length?
-Results:
-Chi-squared value: 2.4537
-P-value: 0.1172
-Conclusion: No significant relationship was found between sentiment and review length.
-📈 Visualizations:
+---
 
-Sentiment Distribution (Bar Chart):
-A visual comparison of positive and negative reviews.
-Sentiment Proportions (Pie Chart):
-Displaying the percentage split between positive and negative reviews.
-Review Length Distribution (Histogram):
-Visualizing the distribution of review lengths for positive and negative sentiments.
-Review Length by Sentiment (Boxplot):
-Comparing review lengths based on sentiment.
-🧑‍💻 Libraries Used:
-
-Pandas: For data analysis and manipulation.
-NumPy: For numerical computations.
-Matplotlib & Seaborn: For data visualization.
-SciPy: For statistical analysis (ANOVA, Chi-Squared).
-🔍 Results and Insights:
-
-Positive Reviews: Tend to be longer, suggesting users express satisfaction in more detail.
-Negative Reviews: Tend to be shorter, indicating that criticism is more concise.
-Business Applications:
-Tailor responses to customer feedback.
-Use sentiment and length insights to improve customer satisfaction.
-💻 How to Run the Project:
-
-Step 1: Clone the Repository
-git clone https://github.com/YOUR_USERNAME/imdb-sentiment-analysis.git
-Step 2: Navigate to the Project Folder
-cd imdb-sentiment-analysis
-Step 3: Install Dependencies
+## How to Run the Project:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MKaaNa/GlobalAIHub_VeriAnalizi.git
+Navigate to the project folder:
+cd GlobalAIHub_VeriAnalizi
+Install dependencies:
 pip install -r requirements.txt
-Step 4: Open and Run the Jupyter Notebook
+Open and run the Jupyter Notebook:
 jupyter notebook IMDB_Sentiment_Analysis.ipynb
-🌐 Project Links:
+Kaggle and GitHub Links:
 
 Kaggle Notebook: IMDB Sentiment Analysis on Kaggle
 GitHub Repository: GitHub Repo
-Turkish Translation (Türkçe)
+IMDB Film Yorumları Sentiment Analizi
 
-📘 Proje Özeti:
-Bu proje, IMDB Dataset of 50K Movie Reviews veri seti kullanılarak pozitif ve negatif sentiment analizini gerçekleştirmektedir. Analiz, Keşifsel Veri Analizi (EDA), Veri Ön İşleme ve Hipotez Testleri içermektedir.
+Bu proje, IMDB Dataset of 50K Movie Reviews veri setini kullanarak pozitif ve negatif sentiment analizini gerçekleştirmektedir. Analiz, Keşifsel Veri Analizi (EDA), Veri Ön İşleme, Hipotez Testleri ve Görselleştirme içermektedir.
 
-📊 Veri Seti Bilgisi:
+Proje Detayları:
 
-Kaynak: Kaggle
-Satır Sayısı: 50,000
-Sütunlar:
-review: Yorum metni
-sentiment: Yorumun pozitif veya negatif olduğunu belirten etiket
-Önizleme:
-Veri setinin ilk 5 satırı:
+Veri Seti: Kaggle'dan alınan IMDB Film Yorumları veri seti
+Amaç: Film yorumlarındaki sentiment (duygu) analizi yapılmış, pozitif ve negatif yorumların uzunlukları ANOVA ve Chi-Squared testleri kullanılarak karşılaştırılmıştır.
+Projeye Genel Bakış:
+Veri Yükleme ve Keşif
+Kaggle'dan IMDB film yorumları veri seti yüklendi.
+İlk birkaç satır önizlendi ve veri yapısı incelendi.
+Keşifsel Veri Analizi (EDA)
+Yorumların sentiment dağılımı (pozitif vs negatif) analiz edildi.
+Veriler çubuk grafiği ve pasta grafiği ile görselleştirildi.
+Veri Temizleme ve Ön İşleme
+Eksik veri kontrolü yapıldı ve eksik yorumlar 'No Review' olarak dolduruldu.
+Yeni bir özellik olan review_length eklendi, her yorumun uzunluğunu temsil eder.
+İstatistiksel Analiz
+ANOVA testi kullanılarak pozitif ve negatif yorumların uzunlukları karşılaştırıldı.
+Chi-Squared testi ile sentiment ve yorum uzunluğu arasındaki ilişki incelendi.
+Görselleştirme
+Sentiment dağılımı, yorum uzunluğu dağılımı ve sentiment bazında yorum uzunluğu karşılaştırması için çubuk grafikleri, pasta grafikleri, histogramlar ve boxplotlar oluşturuldu.
+Sonuçlar ve Öneriler:
 
-| review                                    | sentiment |
-|-------------------------------------------|-----------|
-| One of the other reviewers has mentioned... | positive  |
-| A wonderful little production...           | positive  |
-| I thought this was a wonderful way to...   | positive  |
-| Basically there's a family where...        | negative  |
-| Petter Mattei's 'Love in the Time of Money' | positive  |
-🔍 Adımlar ve Analizler:
+Pozitif Yorumlar genellikle daha uzun olup, kullanıcılar memnuniyetlerini daha detaylı ifade etmektedir.
+Negatif Yorumlar daha kısa olup, kullanıcılar eleştirilerini daha özlü tutmaktadır.
+İşletme Uygulamaları:
+Müşteri geri bildirimlerine özel yanıtlar geliştirilmesi.
+Müşteri memnuniyetini arttırmaya yönelik stratejiler oluşturulabilir.
+Kullanılan Kütüphaneler:
 
-1. Veri Yükleme ve Keşif:
-Veri seti Kaggle'dan yüklendi ve ilk 5 satır önizlendi.
-Sütunlar ve veri türleri kontrol edildi.
-2. Keşifsel Veri Analizi (EDA):
-Sentiment Dağılımı:
-Pozitif: %50
-Negatif: %50
-Çubuk ve Pasta Grafiği ile görselleştirildi.
-3. Veri Temizleme ve Ön İşleme:
-Eksik veri kontrolü yapıldı, eksik veri bulunmadı.
-Veri türleri kontrol edilerek bir sayısal özellik (review_length) eklendi.
-📊 İstatistiksel Analiz:
-
-4.1 ANOVA Testi:
-Hipotez: Pozitif ve negatif yorum uzunlukları farklı mı?
-Sonuçlar:
-F-statistic: 12.0557
-P-value: 0.000516
-Sonuç: Pozitif ve negatif yorum uzunlukları arasında anlamlı bir fark bulunmaktadır.
-4.2 Chi-Squared Testi:
-Hipotez: Sentiment ve yorum uzunluğu arasında ilişki var mı?
-Sonuçlar:
-Chi-squared Değeri: 2.4537
-P-value: 0.1172
-Sonuç: Anlamlı bir ilişki bulunmamaktadır.
-📈 Görselleştirmeler:
-
-Sentiment Dağılımı (Çubuk Grafiği):
-Pozitif ve negatif yorumların görsel karşılaştırması.
-Sentiment Oranları (Pasta Grafiği):
-Pozitif ve negatif yorum oranlarını gösteren pasta grafiği.
-Yorum Uzunluğu Dağılımı (Histogram):
-Pozitif ve negatif yorumların uzunluk dağılımı.
-Sentiment Bazında Yorum Uzunluğu (Boxplot):
-Yorum uzunluklarını sentiment bazında karşılaştırma.
-🧑‍💻 Kullanılan Kütüphaneler:
-
-Pandas: Veri analizi ve manipülasyonu.
+Pandas: Veri manipülasyonu ve analizi.
 NumPy: Sayısal hesaplamalar.
 Matplotlib & Seaborn: Görselleştirme.
 SciPy: İstatistiksel analizler (ANOVA, Chi-Squared).
-🔍 Sonuçlar ve Öneriler:
-
-Pozitif Yorumlar: Genellikle daha uzun olup, kullanıcılar memnuniyetlerini daha detaylı ifade etmektedir.
-Negatif Yorumlar: Daha kısa olup, kullanıcılar eleştirilerini daha özlü tutmaktadır.
-İşletme Uygulamaları:
-Müşteri geri bildirimlerine özel yanıtlar geliştirilmesi.
-Memnuniyet ve katılım stratejilerini geliştirmek için kullanılabilir.
-💻 Projeyi Çalıştırmak İçin:
+Projeyi Çalıştırmak İçin:
 
 Repository'i klonlayın:
-git clone https://github.com/YOUR_USERNAME/imdb-sentiment-analysis.git
+git clone https://github.com/MKaaNa/GlobalAIHub_VeriAnalizi.git
 Proje klasörüne gidin:
-cd imdb-sentiment-analysis
+cd GlobalAIHub_VeriAnalizi
 Gerekli bağımlılıkları yükleyin:
 pip install -r requirements.txt
 Jupyter Notebook'u açın ve çalıştırın:
 jupyter notebook IMDB_Sentiment_Analysis.ipynb
-🌐 Proje Bağlantıları:
+Kaggle ve GitHub Bağlantıları:
 
-Kaggle Notebook Linki: IMDB Sentiment Analysis on Kaggle
-GitHub Repo Linki: GitHub Repo
-Açıklamalar:
-KAGGLE_NOTEBOOK_LINK ve GITHUB_REPO_LINK kısımlarını doğru bağlantılarla değiştirdiğinizden emin olun.
-YAML formatında veri depolama ve proje sunma işlemleri, özellikle konfigürasyon dosyalarında yaygın olsa da, GitHub üzerinde Markdown (README.md) dosyasının daha yaygın kullanıldığını unutmayın.
-
-
-### **Sonraki Adımlar:**
-1. GitHub repository’nizi oluşturun ve bu dosyayı `.yml` formatında yükleyin.
-2. İlgili bağlantıları (KAGGLE_NOTEBOOK_LINK, GITHUB_REPO_LINK) güncellemeyi unutmayın.
-
-Herhangi bir sorunuz olursa, tekrar yardımcı olabilirim! 😊
+Kaggle Notebook: IMDB Sentiment Analysis on Kaggle
+GitHub Repository: GitHub Repo
