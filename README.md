@@ -43,15 +43,21 @@ This project analyzes the **IMDB Dataset of 50K Movie Reviews** using statistica
 - **SciPy:** Statistical analysis (ANOVA, Chi-Squared).
 
 ### **How to Run the Project:**
-1. Clone the repository:
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/YOUR_USERNAME/imdb-sentiment-analysis.git
-Navigate to the project folder:
+   
+2. Navigate to the project folder:
 cd imdb-sentiment-analysis
-Install dependencies:
-pip install -r requirements.txt
-Open and run the Jupyter Notebook:
+
+3. Install dependencies:
+   pip install -r requirements.txt
+4.Open and run the Jupyter Notebook:
 jupyter notebook IMDB_Sentiment_Analysis.ipynb
+
 Kaggle and GitHub Links:
-Kaggle Notebook: IMDB Sentiment Analysis on Kaggle
-GitHub Repository: GitHub Repo
+
+  [IMDB Sentiment Analysis on Kaggle](https://www.kaggle.com/code/musakaanaltin/globalaihub-verianalizi)
+  
+  [GitHub Repo](https://github.com/MKaaNa/GlobalAIHub_VeriAnalizi)
